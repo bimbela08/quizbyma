@@ -60,7 +60,8 @@ def next_question():
         st.session_state.quiz_finished = True
     else:
         reset_question()
-    st.experimental_rerun()
+    st.rerun()
+
 
 def show_result():
     st.markdown("## 🎉 Kuis Selesai!")
