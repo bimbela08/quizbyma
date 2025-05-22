@@ -60,8 +60,7 @@ def next_question():
         st.session_state.quiz_finished = True
     else:
         reset_question()
-    st.experimental_rerun()  # gunakan versi lama agar aman
-
+    st.experimental_rerun() 
 def show_result():
     st.markdown("## 🎉 Kuis Selesai!")
     st.write(f"Kamu menjawab **{st.session_state.score} dari {len(questions)}** dengan benar.")
